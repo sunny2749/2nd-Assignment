@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TECHWAVE</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <style>
+      @media screen and (max-width: 576px) {
+        .btn-one {
+          display: none;
+        }
+        .menu {
+          display: none;
+        }
+        .nav {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav
+        class="flex justify-around w-[100%] max-w-1600px bg-[#1A0B2E] items-center"
+      >
+        <div class="font-[plus-jakarta-sans]">
+          <h1 class="text-[2.1875rem] font-bold text-[#FFFFFF]">
+            Tech<span
+              class="bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] bg-clip-text text-transparent"
+              >Wave</span
+            >
+          </h1>
+        </div>
+
+        <ul class="menu flex gap-[32px] text-[#FFFFFF]">
+          <li><a href="">About</a></li>
+          <li><a href="">Episodes</a></li>
+          <li><a href="">Host</a></li>
+        </ul>
+
+        <button class="menu-btn text-white text-2xl">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <button
+          class="btn-one text-[#FFFFFF] bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] px-[16px] py-[12px] rounded-[10000px] w-[135px] h-[44px]"
+        >
+          Subscribe <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </nav>
+
+      <section class="hidden">
+        <div>
+          <img src="./assets/hero-bg.png" alt="" />
+        </div>
+        <div></div>
+      </section>
+    </header>
+  </body>
+</html>
