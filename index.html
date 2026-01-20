@@ -90,11 +90,33 @@
         .fifth-card {
           padding: 24px;
         }
-        .card-section{
+        .card-section {
           display: grid;
           grid-template-columns: repeat(1, 1fr);
           padding: 40px 20px 60px 20px;
           gap: 16px;
+        }
+        .host-cotainer{
+          padding-left: 20px;
+          padding-right: 20px;
+          padding-bottom: 40px;
+        }
+        .img-and-txt{
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          align-items: center;
+          gap: 16px;
+        }
+        .image{
+          width: 150px;
+          height: 150px;
+          margin-top: 30px;
+        }
+        .social-mideas{
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
       }
 
@@ -359,65 +381,24 @@
             <div class="max-w-[380px]">
               <div>
                 <iframe
-                class="max-w-[380px] max-h-[214px] rounded-t-[20px]"
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/HrgmIWTS_bo?si=j8906FbVyji51R7g"
-                title="YouTube video player"
-                frameborder="0"
-                allow="
-                  accelerometer;
-                  autoplay;
-                  clipboard-write;
-                  encrypted-media;
-                  gyroscope;
-                  picture-in-picture;
-                  web-share;
-                "
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
-              ></iframe>
-              </div>
-              <div class="grid grid-cols-1 gap-[12px] mt-[24px]">
-                <h2 class="font-bold text-[1.5rem]">
-                  How to find time to worship Allah
-                </h2>
-                <p>
-                  Make salah a fixed part of your daily routine, like eating or
-                  sleeping. Start with small acts of worship and stay consistent
-                  every day. Reduce wasted time and give a few minutes daily to
-                  Allah.
-                </p>
-                <div class="flex gap-2 items-center h-[20px]">
-                  <img src="./assets/clock.png" alt="" />
-                  <h3 class="font-bold text-[1.5rem] text-[#00FF88]">
-                    6.34 min
-                  </h3>
-                </div>
-              </div>
-            </div>
-
-            <div class="max-w-[380px] ">
-              <div>
-                <iframe
-                class="max-w-[380px] rounded-t-[20px]"
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/HrgmIWTS_bo?si=j8906FbVyji51R7g"
-                title="YouTube video player"
-                frameborder="0"
-                allow="
-                  accelerometer;
-                  autoplay;
-                  clipboard-write;
-                  encrypted-media;
-                  gyroscope;
-                  picture-in-picture;
-                  web-share;
-                "
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
-              ></iframe>
+                  class="max-w-[380px] max-h-[214px] rounded-t-[20px]"
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/HrgmIWTS_bo?si=j8906FbVyji51R7g"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="
+                    accelerometer;
+                    autoplay;
+                    clipboard-write;
+                    encrypted-media;
+                    gyroscope;
+                    picture-in-picture;
+                    web-share;
+                  "
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
               </div>
               <div class="grid grid-cols-1 gap-[12px] mt-[24px]">
                 <h2 class="font-bold text-[1.5rem]">
@@ -441,24 +422,65 @@
             <div class="max-w-[380px]">
               <div>
                 <iframe
-                class="max-w-[380px] rounded-t-[20px]"
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/HrgmIWTS_bo?si=j8906FbVyji51R7g"
-                title="YouTube video player"
-                frameborder="0"
-                allow="
-                  accelerometer;
-                  autoplay;
-                  clipboard-write;
-                  encrypted-media;
-                  gyroscope;
-                  picture-in-picture;
-                  web-share;
-                "
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
-              ></iframe>
+                  class="max-w-[380px] max-h-[214px] rounded-t-[20px]"
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/HrgmIWTS_bo?si=j8906FbVyji51R7g"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="
+                    accelerometer;
+                    autoplay;
+                    clipboard-write;
+                    encrypted-media;
+                    gyroscope;
+                    picture-in-picture;
+                    web-share;
+                  "
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="grid grid-cols-1 gap-[12px] mt-[24px]">
+                <h2 class="font-bold text-[1.5rem]">
+                  How to find time to worship Allah
+                </h2>
+                <p>
+                  Make salah a fixed part of your daily routine, like eating or
+                  sleeping. Start with small acts of worship and stay consistent
+                  every day. Reduce wasted time and give a few minutes daily to
+                  Allah.
+                </p>
+                <div class="flex gap-2 items-center h-[20px]">
+                  <img src="./assets/clock.png" alt="" />
+                  <h3 class="font-bold text-[1.5rem] text-[#00FF88]">
+                    6.34 min
+                  </h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="max-w-[380px]">
+              <div>
+                <iframe
+                  class="max-w-[380px] max-h-[214px] rounded-t-[20px]"
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/HrgmIWTS_bo?si=j8906FbVyji51R7g"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="
+                    accelerometer;
+                    autoplay;
+                    clipboard-write;
+                    encrypted-media;
+                    gyroscope;
+                    picture-in-picture;
+                    web-share;
+                  "
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
               </div>
               <div class="grid grid-cols-1 gap-[12px] mt-[24px]">
                 <h2 class="font-bold text-[1.5rem]">
@@ -480,8 +502,76 @@
             </div>
           </div>
         </div>
-        <div class="host-cotainer"></div>
+        <div class="host-cotainer px-[200px] pb-[120px]">
+          <h1 class="font-bold text-[#FFFFFF] text-[2rem] text-center mt-[40px]">Met The Host</h1>
+          <div class="img-and-txt flex gap-[24px]">
+            <div class="image w-[300px] h-[300px]">
+              <img src="./assets/host.png" alt="" />
+            </div>
+
+            <div class="text-[#FFFFFF]">
+              <h2 class="mb-[16px] font-bold text-[2rem]">Alex Kumar</h2>
+              <p class="mb-[16px]">
+                Tech entrepreneur, productivity expert, and lifelong learner.
+                Alex has been in the tech industry for over 10 years, working
+                with startups and Fortune 500 companies. Through TechWave, Alex
+                shares insights from industry leaders and practical advice for
+                anyone looking to grow in tech.
+              </p>
+              <div class="social-mideas flex gap-[8px]">
+                <div class="border-1 border-[#533C72] rounded-full p-[8px]">
+                <img src="./assets/linkedin.png" alt="" />
+              </div>
+              <div class="border-1 border-[#533C72] rounded-full p-[8px]">
+                <img src="./assets/x.png" alt="" />
+              </div>
+              <div class="border-1 border-[#533C72] rounded-full p-[8px]">
+                <img src="./assets/instagram.png" alt="" />
+              </div>
+              <div class="border-1 border-[#533C72] rounded-full p-[8px]">
+                <img src="./assets/youtube.png" alt="" />
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
+
+    <!-- footer -->
+     <section>
+      <div class=" max-w-[1600px] m-0px m-auto">
+        <div class="absolute z-0">
+        <img src="./assets/footer-bg.png" alt="" class="bg-img w-full h-full object-cover object-top">
+      </div>
+      <div class="flex flex-col text-center">
+        <h1 class=" relative z-10 text-[3.1875rem] font-bold text-[#FFFFFF]">
+            Tech<span
+              class="bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] bg-clip-text text-transparent"
+              >Wave</span
+            >
+          </h1>
+          <div class="flex gap-[40px] my-[32px] justify-center">
+            <div class="relative flex gap-2 items-center h-[20px]">
+              <img src="./assets/spotify.png" alt="">
+              <p class="text-white">Spotify</p>
+            </div>
+            <div class="relative flex gap-2 items-center h-[20px]">
+              <img src="./assets/apple-podcast.png" alt="">
+              <p class="text-white">Apple Podcasts</p>
+            </div>
+            <div class="relative flex gap-2 items-center h-[20px]">
+              <img src="./assets/youtube-podcast.png" alt="">
+              <p class="text-white">YouTube</p>
+            </div>
+            <div class="relative flex gap-2 items-center h-[20px]">
+              <img src="./assets/twitter.png" alt="">
+              <p class="text-white">Twitter</p>
+            </div>
+          </div>
+          <p class="relative text-[#FFFFFF] ">© 2026 TechWave Podcast. All rights reserved.</p>
+      </div>
+      </div>
+     </section>
   </body>
 </html>
