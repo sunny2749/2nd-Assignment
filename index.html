@@ -18,6 +18,7 @@
 
     <style>
       @media screen and (max-width: 576px) {
+        /* navbar */
         .btn-one {
           display: none;
         }
@@ -25,18 +26,71 @@
           display: none;
         }
         .nav {
-          display: flex;
-          flex-direction: column;
+          display: none;
+          max-width: 1600px;
+        }
+
+        /* banner section */
+        .img-box {
+          max-width: 200px;
+          max-height: 200px;
+          bottom: 100px;
+          margin-top: 65px;
+        }
+        .microphone {
+          max-width: 50px;
+          max-height: 75px;
+          margin: 60px;
+          margin-left: 75px;
+        }
+
+        .banner-btn-two {
+          max-width: 170px;
+          max-height: 44px;
+          font-size: 13px;
+        }
+        .banner-btn-three {
+          max-width: 147px;
+          max-height: 44px;
+          font-size: 13px;
+          margin-bottom: 20px;
+        }
+        .tex-section,
+        h1 {
+          font-size: 2.4rem;
+        }
+      }
+
+      /* about section */
+      .about-section {
+        padding: 40px 20px;
+      }
+      .hr {
+        margin: 40px 40px;
+      }
+      .rating {
+        display: grid;
+        flex-direction: column;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-content: center;
+        margin: 0px auto;
+      }
+
+      @media screen and (min-width: 992px) {
+        .menu-btn {
+          display: none;
         }
       }
     </style>
   </head>
   <body>
+    <!-- header section -->
     <header>
       <nav
-        class="flex justify-around w-[100%] max-w-1600px bg-[#1A0B2E] items-center"
+        class="flex justify-around w-[100%] max-w-[1600px] bg-[#1A0B2E] items-center pt-[16px] pb-[16px] border-1 border-b-[#412567]"
       >
-        <div class="font-[plus-jakarta-sans]">
+        <div class="font-[Inter]">
           <h1 class="text-[2.1875rem] font-bold text-[#FFFFFF]">
             Tech<span
               class="bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] bg-clip-text text-transparent"
@@ -56,18 +110,155 @@
         </button>
 
         <button
-          class="btn-one text-[#FFFFFF] bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] px-[16px] py-[12px] rounded-[10000px] w-[135px] h-[44px]"
+          class="btn-one text-[#FFFFFF] bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] px-[16px] py-[12px] rounded-[10000px] w-[135px] h-[44px] flex items-center justify-center gap-[4px] cursor-pointer"
         >
           Subscribe <i class="fa-solid fa-arrow-right"></i>
         </button>
       </nav>
 
-      <section class="hidden">
-        <div>
-          <img src="./assets/hero-bg.png" alt="" />
+      <!-- Banner Section -->
+      <section
+        class="banner-section relative flex flex-col justify-center items-center text-center min-h-screen overflow-visible"
+      >
+        <div class="absolute inset-0 z-0">
+          <img
+            src="./assets/hero-bg.png"
+            alt=""
+            class="bg-img w-full h-full object-cover object-top"
+          />
         </div>
-        <div></div>
+        <div
+          class="relative flex flex-col justify-center items-center z-10 mt-[100px]"
+        >
+          <div class="img-box relative w-80 h-80">
+            <img
+              class="circle absolute w-full h-full z-10"
+              src="./assets/hero-circle.png"
+              alt=""
+            />
+            <img
+              class="microphone absolute max-w-[100px] max-h-[150px] z-20 inset-0 m-auto"
+              src="./assets/microphone.png"
+              alt=""
+            />
+            <button
+              style="box-shadow: 0 3px 15px 0px #00ff88"
+              class="absolute bg-[#00FF88] px-[8px] rounded-[20px] w-[65px] h-[33px] right-0 top-7 font-[Inter] z-30 banner-btn-one"
+            >
+              NEW
+            </button>
+          </div>
+          <div class="tex-section">
+            <h1
+              class="font-[Inter] font-semibold text-[#FFFFFF] md:mt-[40px] sm:mt-0 text-[3rem]"
+            >
+              TechWave
+            </h1>
+            <p class="text-[#FFFFFF] font-[Inter] text-[1rem] opacity-[80%]">
+              Your daily dose of tech insights, productivity hacks, and personal
+              growth
+            </p>
+          </div>
+          <div class="flex gap-2 mt-[24px]">
+            <button
+              class="banner-btn-two text-[#FFFFFF] bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] px-[20px] py-[12px] rounded-full flex items-center jus gap-[8px] cursor-pointer"
+            >
+              <img
+                class="w-[20px] h-[20px]"
+                src="./assets/spotify.png"
+                alt=""
+              />
+              Listen on Spotify
+            </button>
+
+            <button
+              class="banner-btn-three text-[#00FF88] px-[20px] py-[12px] rounded-full flex items-center gap-[8px] border-2 cursor-pointer"
+            >
+              <img
+                class="w-[20px] h-[20px]"
+                src="./assets/message.png"
+                alt=""
+              />
+              Subscribe
+            </button>
+          </div>
+        </div>
       </section>
     </header>
+
+    <!-- About Section -->
+    <section
+      class="about-section font-[Inter] pt-[50px] pb-[120px] px-[200px] sm:py-[40px] sm:px-[20px] bg-[#1A0B2E]"
+    >
+      <div class="grid grid-cols-1 text-center justify-center">
+        <h2 class="text-white text-[2rem] font-bold">About the Podcast</h2>
+        <p class="text-white text-[0.8rem]">
+          TechWave is your go-to podcast for staying ahead in the fast-paced
+          world of technology. We break down complex topics into digestible
+          insights, explore productivity strategies that actually work, and
+          share stories of personal growth from industry leaders. Join thousands
+          of young professionals and tech enthusiasts who start their day with
+          TechWave.
+        </p>
+        <div class="hr text-[#50288d] opacity-[0.1px] mt-[80px] mb-[80px]">
+          <hr />
+        </div>
+
+        <div
+          class="rating grid grid-cols-4 gap-[80px] text-start items-start justify-center"
+        >
+          <div class="">
+            <h2 class="text-[2rem] font-bold text-[#00FF88]">150K+</h2>
+            <p class="text-white">Monthly Listeners</p>
+          </div>
+          <div>
+            <h2 class="text-[2rem] font-bold text-[#00FF88]">200</h2>
+            <p class="text-white">Episodes Published</p>
+          </div>
+          <div>
+            <h2 class="text-[2rem] font-bold text-[#00FF88]">4.9★</h2>
+            <p class="text-white">Average Rating</p>
+          </div>
+          <div>
+            <h2 class="text-[2rem] font-bold text-[#00FF88]">50</h2>
+            <p class="text-white">Industry Experts</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- card section -->
+    <section>
+      <div>
+        <h1 class="heading">Why Choose TechWave</h1>
+        <div class="card-container">
+          <div>
+            <img src="" alt="" />
+            <h3></h3>
+            <p></p>
+          </div>
+          <div>
+            <img src="" alt="" />
+            <h3></h3>
+            <p></p>
+          </div>
+          <div>
+            <img src="" alt="" />
+            <h3></h3>
+            <p></p>
+          </div>
+          <div>
+            <img src="" alt="" />
+            <h3></h3>
+            <p></p>
+          </div>
+          <div>
+            <img src="" alt="" />
+            <h3></h3>
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
