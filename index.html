@@ -59,28 +59,41 @@
         h1 {
           font-size: 2.4rem;
         }
-      }
+        /* about section */
+        .about-section {
+          padding: 40px 20px;
+        }
+        .hr {
+          margin: 40px 40px;
+        }
+        .rating {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          align-items: center;
+          justify-content: center;
+          margin: 0px auto;
+        }
 
-      /* about section */
-      .about-section {
-        padding: 40px 20px;
-      }
-      .hr {
-        margin: 40px 40px;
-      }
-      .rating {
-        display: grid;
-        flex-direction: column;
-        grid-template-columns: repeat(2, 1fr);
-        align-items: center;
-        justify-content: center;
-        margin: 0px auto;
+        #card-container{
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+        }
+        
+        .first-card, .second-card, .third-card, .fourth-card, .fifth-card{
+          padding: 24px;
+        }
+
+
       }
 
       @media screen and (min-width: 992px) {
         .menu-btn {
           display: none;
         }
+      }
+
+      p{
+        opacity: 60%;
       }
     </style>
   </head>
@@ -205,7 +218,7 @@
         </div>
 
         <div
-          class="rating grid grid-cols-4 gap-[80px] text-start items-start justify-center"
+          class="rating grid grid-cols-4 gap-[80px] justify-around"
         >
           <div class="">
             <h2 class="text-[2rem] font-bold text-[#00FF88]">150K+</h2>
@@ -228,34 +241,61 @@
     </section>
 
     <!-- card section -->
-    <section>
-      <div>
-        <h1 class="heading">Why Choose TechWave</h1>
-        <div class="card-container">
-          <div>
-            <img src="" alt="" />
-            <h3></h3>
-            <p></p>
+    <section class="bg-[#230E3D] font-[Inter]">
+      <h1 class="heading text-center font-bold text-[2.8rem] text-[#FFFFFF] pt-[120px]">Why Choose TechWave</h1>
+      <div class="pt-[40px] pb-[120px] px-[200px] text-white">
+        <div id="card-container" class="grid grid-cols-3 gap-[30px]">
+          <div class="row-span-2">
+            <div class="first-card px-[40px] py-[107.5px] grid grid-cols-1 gap-[16px] rounded-[40px] bg-[#351165]">
+              <img class="max-w-[60px] max-h-[60px]" src="./assets/headphone.png" alt="" />
+              <h3 class="font-bold text-[1.5rem]">Premium Audio Quality</h3>
+              <p class="text-[0.9rem] leading-[24px]">
+                Experience crystal-clear sound with professional-grade recording
+                equipment and expert audio engineering. Every episode is
+                mastered for optimal listening across all devices and platforms.
+              </p>
+            </div>
+          </div>
+          <div class="col-span-2">
+            <div class="second-card grid grid-cols-1 gap-[16px] p-[40px] bg-[#351165] rounded-[40px] ">
+              <img src="./assets/device.png" alt="" />
+              <h3 class="font-bold text-[1.5rem]">Mobile Friendly</h3>
+              <p>
+                Listen on the go with seamless mobile experience and offline
+                downloads.
+              </p>
+            </div>
+          </div>
+          <div class="col-span-2">
+            <div class=" third-cird grid grid-cols-1 gap-[16px] p-[40px] bg-[#351165] rounded-[40px]">
+              <img src="./assets/location.png" alt="" />
+              <h3 class="font-bold text-[1.5rem]">Global Community</h3>
+              <p>
+                Connect with tech enthusiasts from over 120 countries worldwide.
+              </p>
+            </div>
+          </div>
+          <div class="col-span-2">
+            <div class="fourth-card grid grid-cols-1 gap-[16px] p-[40px] bg-[#351165] rounded-[40px]">
+              <img src="./assets/resource.png" alt="" />
+              <h3 class="font-bold text-[1.5rem]">Exclusive Interviews</h3>
+              <p>
+                Get unprecedented access to industry titans, startup founders,
+                and tech visionaries. Our host secures exclusive conversations
+                you won't find anywhere else, diving deep into their journeys,
+                failures, and success strategies.
+              </p>
+            </div>
           </div>
           <div>
-            <img src="" alt="" />
-            <h3></h3>
-            <p></p>
-          </div>
-          <div>
-            <img src="" alt="" />
-            <h3></h3>
-            <p></p>
-          </div>
-          <div>
-            <img src="" alt="" />
-            <h3></h3>
-            <p></p>
-          </div>
-          <div>
-            <img src="" alt="" />
-            <h3></h3>
-            <p></p>
+            <div class="fifth-card grid grid-cols-1 gap-[16px] p-[40px] bg-[#351165] rounded-[40px] ">
+              <img class="max-w-[60px]" src="./assets/resource.png" alt="" />
+              <h3 class="font-bold text-[1.5rem]">Rich Resources</h3>
+              <p>
+                Access show notes, transcripts, and additional learning
+                materials for every episode.
+              </p>
+            </div>
           </div>
         </div>
       </div>
