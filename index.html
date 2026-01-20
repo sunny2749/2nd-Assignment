@@ -74,16 +74,20 @@
           margin: 0px auto;
         }
 
-        #container{
+        #container {
           padding: 40px 20px;
         }
-        .card-container{
+        .card-container {
           display: grid;
           grid-template-columns: repeat(1, 1fr);
           gap: 15px;
         }
-        
-        .first-card, .second-card, .third-card, .fourth-card, .fifth-card{
+
+        .first-card,
+        .second-card,
+        .third-card,
+        .fourth-card,
+        .fifth-card {
           padding: 24px;
         }
       }
@@ -94,7 +98,7 @@
         }
       }
 
-      p{
+      p {
         opacity: 60%;
       }
     </style>
@@ -219,9 +223,7 @@
           <hr />
         </div>
 
-        <div
-          class="rating grid grid-cols-4 gap-[80px] justify-around"
-        >
+        <div class="rating grid grid-cols-4 gap-[80px] justify-around">
           <div class="">
             <h2 class="text-[2rem] font-bold text-[#00FF88]">150K+</h2>
             <p class="text-white">Monthly Listeners</p>
@@ -244,12 +246,22 @@
 
     <!-- card section -->
     <section class="bg-[#230E3D] font-[Inter]">
-      <h1 class="heading text-center font-bold text-[2.8rem] text-[#FFFFFF] pt-[120px]">Why Choose TechWave</h1>
+      <h1
+        class="heading text-center font-bold text-[2.8rem] text-[#FFFFFF] pt-[120px]"
+      >
+        Why Choose TechWave
+      </h1>
       <div id="container" class="pt-[40px] pb-[120px] px-[200px] text-white">
         <div class="card-container grid grid-cols-3 gap-[30px]">
           <div class="row-span-2">
-            <div class="first-card px-[40px] py-[107.5px] grid grid-cols-1 gap-[16px] rounded-[40px] bg-[#351165]">
-              <img class="max-w-[60px] max-h-[60px]" src="./assets/headphone.png" alt="" />
+            <div
+              class="first-card px-[40px] py-[107.5px] grid grid-cols-1 gap-[16px] rounded-[40px] bg-[#351165]"
+            >
+              <img
+                class="max-w-[60px] max-h-[60px]"
+                src="./assets/headphone.png"
+                alt=""
+              />
               <h3 class="font-bold text-[1.5rem]">Premium Audio Quality</h3>
               <p class="text-[0.9rem] leading-[24px]">
                 Experience crystal-clear sound with professional-grade recording
@@ -259,8 +271,14 @@
             </div>
           </div>
           <div class="col-span-2">
-            <div class="second-card grid grid-cols-1 gap-[16px] p-[40px] bg-[#351165] rounded-[40px] ">
-              <img class="max-w-[60px] max-h-[60px]" src="./assets/device.png" alt="" />
+            <div
+              class="second-card grid grid-cols-1 gap-[16px] p-[40px] bg-[#351165] rounded-[40px]"
+            >
+              <img
+                class="max-w-[60px] max-h-[60px]"
+                src="./assets/device.png"
+                alt=""
+              />
               <h3 class="font-bold text-[1.5rem]">Mobile Friendly</h3>
               <p>
                 Listen on the go with seamless mobile experience and offline
@@ -269,8 +287,14 @@
             </div>
           </div>
           <div class="col-span-2">
-            <div class=" third-cird grid grid-cols-1 gap-[16px] p-[40px] bg-[#351165] rounded-[40px]">
-              <img class="max-w-[60px] max-h-[60px]" src="./assets/location.png" alt="" />
+            <div
+              class="third-cird grid grid-cols-1 gap-[16px] p-[40px] bg-[#351165] rounded-[40px]"
+            >
+              <img
+                class="max-w-[60px] max-h-[60px]"
+                src="./assets/location.png"
+                alt=""
+              />
               <h3 class="font-bold text-[1.5rem]">Global Community</h3>
               <p>
                 Connect with tech enthusiasts from over 120 countries worldwide.
@@ -278,8 +302,14 @@
             </div>
           </div>
           <div class="col-span-2">
-            <div class="fourth-card grid grid-cols-1 gap-[16px] p-[40px] bg-[#351165] rounded-[40px]">
-              <img class="max-w-[60px] max-h-[60px]" src="./assets/resource.png" alt="" />
+            <div
+              class="fourth-card grid grid-cols-1 gap-[16px] p-[40px] bg-[#351165] rounded-[40px]"
+            >
+              <img
+                class="max-w-[60px] max-h-[60px]"
+                src="./assets/resource.png"
+                alt=""
+              />
               <h3 class="font-bold text-[1.5rem]">Exclusive Interviews</h3>
               <p>
                 Get unprecedented access to industry titans, startup founders,
@@ -290,8 +320,14 @@
             </div>
           </div>
           <div>
-            <div class="fifth-card grid grid-cols-1 gap-[16px] p-[40px] bg-[#351165] rounded-[40px] ">
-              <img class="max-w-[60px]  max-h-[60px] " src="./assets/resource.png" alt="" />
+            <div
+              class="fifth-card grid grid-cols-1 gap-[16px] p-[40px] bg-[#351165] rounded-[40px]"
+            >
+              <img
+                class="max-w-[60px] max-h-[60px]"
+                src="./assets/resource.png"
+                alt=""
+              />
               <h3 class="font-bold text-[1.5rem]">Rich Resources</h3>
               <p>
                 Access show notes, transcripts, and additional learning
@@ -305,16 +341,135 @@
 
     <!-- Double banner section -->
 
-    <section>
-      <main>
-        <div class="episode-container">
-          <h1>Featured Episodes</h1>
-          <div class="card-section">
-            <div></div>
+    <section class="bg-[#1A0B2E] w-full min-h-screen">
+      <div class="double-banner-container">
+        <div class="episode-container text-[#FFFFFF]">
+          <h1 class="text-center font-bold text-[3rem] pt-[120px] mb-[40px]">
+            Featured Episodes
+          </h1>
+          <div
+            class="card-section grid grid-cols-3 gap-[50px] px-[200px] pb-[120px]"
+          >
+            <div class="max-w-[380px] max-h-[214px]">
+              <iframe
+                class="max-w-[380px] max-h-[214px] rounded-t-[20px]"
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/HrgmIWTS_bo?si=j8906FbVyji51R7g"
+                title="YouTube video player"
+                frameborder="0"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              <div class="grid grid-cols-1 gap-[12px] mt-[24px]">
+                <h2 class="font-bold text-[1.5rem]">
+                  How to find time to worship Allah
+                </h2>
+                <p>
+                  Make salah a fixed part of your daily routine, like eating or
+                  sleeping. Start with small acts of worship and stay consistent
+                  every day. Reduce wasted time and give a few minutes daily to
+                  Allah.
+                </p>
+                <div class="flex">
+                  <img src="./assets/clock.png" alt="" />
+                  <h3 class="font-bold text-[1.5rem] text-[#00FF88]">
+                    6.34 min
+                  </h3 c>
+                </div>
+              </div>
+            </div>
+
+            <div class="max-w-[380px] max-h-[214px]">
+              <iframe
+                class="max-w-[380px] max-h-[214px] rounded-t-[20px]"
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/HrgmIWTS_bo?si=j8906FbVyji51R7g"
+                title="YouTube video player"
+                frameborder="0"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              <div class="grid grid-cols-1 gap-[12px] mt-[24px]">
+                <h2 class="font-bold text-[1.5rem]">
+                  How to find time to worship Allah
+                </h2>
+                <p>
+                  Make salah a fixed part of your daily routine, like eating or
+                  sleeping. Start with small acts of worship and stay consistent
+                  every day. Reduce wasted time and give a few minutes daily to
+                  Allah.
+                </p>
+                <div class="flex">
+                  <img src="./assets/clock.png" alt="" />
+                  <h3 class="font-bold text-[1.5rem] text-[#00FF88]">
+                    6.34 min
+                  </h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="max-w-[380px] max-h-[214px]">
+              <iframe
+                class="max-w-[380px] max-h-[214px] rounded-t-[20px]"
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/HrgmIWTS_bo?si=j8906FbVyji51R7g"
+                title="YouTube video player"
+                frameborder="0"
+                allow="
+                  accelerometer;
+                  autoplay;
+                  clipboard-write;
+                  encrypted-media;
+                  gyroscope;
+                  picture-in-picture;
+                  web-share;
+                "
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              <div class="grid grid-cols-1 gap-[12px] mt-[24px]">
+                <h2 class="font-bold text-[1.5rem]">
+                  How to find time to worship Allah
+                </h2>
+                <p>
+                  Make salah a fixed part of your daily routine, like eating or
+                  sleeping. Start with small acts of worship and stay consistent
+                  every day. Reduce wasted time and give a few minutes daily to
+                  Allah.
+                </p>
+                <div class="flex">
+                  <img src="./assets/clock.png" alt="" />
+                  <h3 class="font-bold text-[1.5rem] text-[#00FF88]">
+                    6.34 min
+                  </h3>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="host-cotainer"></div>
-      </main>
+      </div>
     </section>
   </body>
 </html>
